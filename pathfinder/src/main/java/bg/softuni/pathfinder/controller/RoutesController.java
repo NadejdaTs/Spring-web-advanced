@@ -80,7 +80,8 @@ public class RoutesController {
             modelAndView.setViewName("redirect:add");
         } else {
             routeService.add(addRouteBindingModel);
-            modelAndView.setViewName("redirect:/");
+//            modelAndView.setViewName("redirect:/");
+            modelAndView.setViewName("redirect:/routes");
         }
 
         return modelAndView;
