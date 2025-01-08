@@ -1,14 +1,13 @@
 package org.softuni.mobilele.init;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.Collectors;
 import org.softuni.mobilele.config.OpenExchangeRateConfig;
 import org.softuni.mobilele.model.dto.ExchangeRatesDTO;
 import org.softuni.mobilele.service.CurrencyService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.Map;
 
 @Component
 public class RatesInit implements CommandLineRunner {
