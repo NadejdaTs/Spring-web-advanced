@@ -20,7 +20,7 @@ public class CommentServiceImpl implements CommentService {
     @Override
     public void create(CreateCommentBindingModel createCommentBindingModel) {
         Comment comment = mapper.map(createCommentBindingModel, Comment.class);
-        comment.setId(null);
+//        comment.setId(null);
 
         commentRepository.save(comment);
     }

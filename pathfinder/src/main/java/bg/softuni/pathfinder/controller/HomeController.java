@@ -20,7 +20,6 @@ public class HomeController {
         model.addAttribute("mostCommentedRoute", route);
 
         return "index";
-
     }
 
     @GetMapping("/about")
