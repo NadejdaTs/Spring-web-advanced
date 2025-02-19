@@ -70,7 +70,8 @@
     </a>
 </section><!-- Info Section --><div th:if="${mostCommentedRoute != null}">
     <section class="road">
-        <img th:if="${mostCommentedRoute.imageUrl != null}" th:src="${'\images\' + mostCommentedRoute.imageUrl}"
+        <img th:if="${mostCommentedRoute.imageUrl != null}"
+             th:src="${'\images\' + mostCommentedRoute.imageUrl}"
              alt="">
         <img th:if="${mostCommentedRoute.imageUrl == null}" src="/images/most-commented.jpg" alt="">
         <div>
